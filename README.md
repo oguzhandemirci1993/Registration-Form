@@ -1,2 +1,1 @@
-# Registration-Form
-Basic HTML-CSS webpage that I'm coding with my FreeCodeCamp Responsive Web Design course knowledge. This is a clone of "HTML Registration Form" code exercising webpage which can be found at FreeCodeCamp Responsive Web Design course. 
+This web page has been developed purely for exercise purposes, with knowledge that learned from FreeCodeCamp's Responsive Web Design Certification Course and inspired by the HTML Registration Form web page at FreeCodeCamp. Images have been taken from pixabay.com. How this project has been developed can be observed by following the commits. Thanks for visiting.
