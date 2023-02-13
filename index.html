@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Registration Form</title>
+        <meta charset="UTF-8"
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1>Registration Form</h1>
+        <p>Please fill out this form with the required information.</p>
+        <fieldset>
+            <label for="first-name">Your Name: <input required id="first-name" name="first-name" type="text"></label>
+            <label for="surname">Your Surname: <input required id="surname" name="surname" type="text"></label>
+            <label for="email">Your E-mail Adress: <input required id="email" name="email" type="email"></label>
+            <label for="password">Your Password: <input required id="password" name="password" type="password" pattern="[a-z0-9]{10,}" ></label>
+        </fieldset>
+        <fieldset>
+            <label for="picture">Upload a profile picture: <input required id="picture" name="picture" type="image"></label>
+        </fieldset>
+        <fieldset>
+            <p>Please select what kind of bicycle is your favourite?</p>
+            <label for="mountain-bike"><input required id="mountain-bike" value="mountain-bike" name="bike-type" type="radio">Mountain Bike</label>
+            <label for="city-bike"><input required id="city-bike" value="city-bike" name="bike-type" type="radio">City Bike</label>
+            <label for="racing-bike"><input required id="racing-bike" value="racing-bike" name="bike-type" type="radio">Racing Bike</label>
+            <label for="terms-conditions"><input required id="terms-conditions" value="terms-conditions" name="terms-conditions" type="checkbox">I accept the terms and conditions</label>
+        </fieldset>
+    </body>
+</html>
