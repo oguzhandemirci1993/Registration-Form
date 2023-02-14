@@ -12,17 +12,28 @@
             <label for="first-name">Your Name: <input required id="first-name" name="first-name" type="text"></label>
             <label for="surname">Your Surname: <input required id="surname" name="surname" type="text"></label>
             <label for="email">Your E-mail Adress: <input required id="email" name="email" type="email"></label>
+            <label for="age">Your age: <input required id="age" name="age" type="number" min="13" max="120"></label>
             <label for="password">Your Password: <input required id="password" name="password" type="password" pattern="[a-z0-9]{10,}" ></label>
-        </fieldset>
-        <fieldset>
-            <label for="picture">Upload a profile picture: <input required id="picture" name="picture" type="image"></label>
+            <label for="picture">Upload a profile picture: <input required id="picture" name="picture" type="file"></label>
+            <label for="terms-conditions"><input required id="terms-conditions" value="terms-conditions" name="terms-conditions" type="checkbox">I accept the terms and conditions.</label>
         </fieldset>
         <fieldset>
             <p>Please select what kind of bicycle is your favourite?</p>
             <label for="mountain-bike"><input required id="mountain-bike" value="mountain-bike" name="bike-type" type="radio">Mountain Bike</label>
             <label for="city-bike"><input required id="city-bike" value="city-bike" name="bike-type" type="radio">City Bike</label>
-            <label for="racing-bike"><input required id="racing-bike" value="racing-bike" name="bike-type" type="radio">Racing Bike</label>
-            <label for="terms-conditions"><input required id="terms-conditions" value="terms-conditions" name="terms-conditions" type="checkbox">I accept the terms and conditions</label>
+            <label for="racing-bike"><input required id="racing-bike" value="racing-bike" name="bike-type" type="radio">Racing Bike</label>  
+            <label for="hear-about">How did you hear about us?
+                <select>
+                    <option value="1">(select one)</option>
+                    <option value="2">Search on the Web</option>
+                    <option value="3">Adverts</option>
+                    <option value="4">A Friend's Reference</option>
+                    <option value="5">Other</option> 
+                    <!--An option like "Other-please specify." will be available with a programming language.-->
+                </select>
+                <p>Please give more info about yourself:</p>
+                <textarea name="user" id="user" cols="50" rows="3" placeholder="I love bicycles because..."></textarea>
+            </label>        
         </fieldset>
     </body>
 </html>
