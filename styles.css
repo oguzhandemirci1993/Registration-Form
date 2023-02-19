@@ -1,4 +1,56 @@
 body {
-  background-color:#78276c;
+  background:linear-gradient(rgb(0,25,100),rgb(0,150,250,0.9),rgb(0,25,100));
+  color:white;
+  width:100vw;
+  height:100vh;
+ }
+
+fieldset,input,select,textarea {
+  display: block;
+  max-width: 400px;
+  min-width: 200px;
+  width: 60vw;
+  margin: auto;
+}
+
+p {
+font-size: 16px;
+}
+
+h1,p {
+  text-align: center;
+  font-family: Georgia, Calibri;
+}
+
+.footer-styling {
+  text-align:center;
+  font-family: Georgia, Helvetica;
+}
+
+.footer-styling h3{
+  font-size: 18px;
+  margin-top:1%;
+  margin-bottom: 1%;
+}
+
+.footer-styling p{
+  font-size: 14px;
+  margin: 0.20em 500px;
+}
+
+a {
+  color:lightskyblue;
+}
+
+a:visited {
+  color:lightblue;
+}
+
+a:hover {
+  color:lightblue;
+  ;
+}
+
+a:active {
   color:white;
 }
