@@ -30,7 +30,7 @@ input[type="checkbox"] {
 }
 
 
-.radio-set {
+.radio-set, .checkbox-set {
   width: unset;
   margin:0 0.5em 0 0;
   vertical-align: middle;
