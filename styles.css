@@ -4,36 +4,36 @@ body {
   width:100%;
   height:100vh;
   margin: 0; 
+  /*These width, height and margin values removes horizontal scroll bar and make full screen view feeling.*/
   font-family: Georgia, Calibri;
-  font-size: 16px;
+  font-size: 1rem;
  }
 
 input,select,textarea {
-  width: 100%;
-  min-height: 2em;
-  margin: 10px 0 0 0;
-}
+  width: 100%; /*We still need to maintain this width value to ensure width of these elements can cover 100% percent of their rows.*/
+  min-height: 1.5rem; /*This adjusts text input boxes.*/
+  margin: 0.5rem 0; /*This adjusts distances between text input boxes.*/
 
 form {
   max-width: 400px;
-  min-width: 200px;
-  width: 60vw;
-  margin:0.1em auto;
+  min-width: 300px;
+  width: 60vw; /* Elements should have 60% of the viewport height value and this value should lay between 300-400px.*/
+  margin: 0rem auto; /*This centers the form.*/
 }
 
 label {
   display:block;
 }
 
-input[type="checkbox"] {
-  display:unset;
+.radio-set, .checkbox-set{
+  width: unset;
+  margin-right:0.3rem; /*top,right,bottom,left TRBL*/
+  vertical-align:-45%; 
 }
 
-
-.radio-set, .checkbox-set {
-  width: unset;
-  margin:0 0.5em 0 0;
-  vertical-align: middle;
+input[type="file"] {
+  padding: 1px 0px; /*Made margins same between other input elements.*/
+  margin-bottom:0;
 }
 
 input[type="submit"] {
@@ -45,11 +45,12 @@ input[type="submit"] {
   background-color: lightblue;
   border-color: white;
   min-width: 100px;
+  font-weight: bold; /*Makes the text bold.*/
 }
 
 fieldset {
   border: none;
-  padding: 1rem 0;
+  padding: 0.5rem 0rem 0.5rem 0; /*top,right,bottom,left TRBL*/
   border-bottom: 3px solid white;
 }
 
