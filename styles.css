@@ -101,17 +101,18 @@ input[type="submit"] {
 }
 
 a {
-  color:lightskyblue;
+  color:rgb(109, 238, 105);
   margin-right: 0.5rem;
   padding-bottom:1rem;
 }
 
 a:visited {
   color:lightblue;
+  /*FreeCodeCamp link is not working with this code for some reason.*/
 }
 
 a:hover {
-  color:lightblue;
+  color:white;
 }
 
 a:active {
