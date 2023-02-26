@@ -9,7 +9,7 @@
     <form method="post" action='https://register-demo.freecodecamp.org'>
         <h1>Registration Form</h1>
         <p>Please fill out this form with the required information.</p>
-        <fieldset>
+        <fieldset class="fieldset1">
             <label for="first-name">Your Name: <input required id="first-name" name="first-name" type="text"></label>
             <label for="surname">Your Surname: <input required id="surname" name="surname" type="text"></label>
             <label for="email">Your E-mail Adress: <input required id="email" name="email" type="email"></label>
@@ -17,7 +17,7 @@
             <label for="password">Your Password: <input required id="password" name="password" type="password" pattern="[a-z0-9]{10,}" ></label>
             <label for="picture">Upload a profile picture: <input required id="picture" name="picture" type="file"></label>
         </fieldset>
-        <fieldset>
+        <fieldset class="fieldset2">
             <label>Please select what kind of bicycle is your favourite?</label>
             <label for="mountain-bike"><input class="radio-set" required id="mountain-bike" value="mountain-bike" name="bike-type" type="radio">Mountain Bike</label>
             <label for="city-bike"><input class="radio-set" required id="city-bike" value="city-bike" name="bike-type" type="radio">City Bike</label>
@@ -35,19 +35,18 @@
             <label for="user"> Please give more info about yourself:
                 <textarea name="user" id="user" cols="50" rows="3" placeholder="I love bicycles because..."></textarea>
             </label>
-            <label for="terms-conditions"><input class="checkbox-set" required id="terms-conditions" value="terms-conditions" name="terms-conditions" type="checkbox">I accept the terms and conditions.</label>
-            <label><input type="submit" value="Submit"></label>
+            <label for="terms-conditions"><input class="checkbox-set" required id="terms-conditions" value="terms-conditions" name="terms-conditions" type="checkbox">I accept the <a href="https://www.linkedin.com/in/oguzhandemirci/" target="_blank">terms and conditions.</a> </label>
         </fieldset>
+    <fieldset class="fieldset3"> 
+        <!-Creating a different fieldset for submit button prevents it moving to right side when dragging the checkbox to the right.-->
+        <input type="submit" value="Submit" />
+        </fieldset> 
     </form>
-    <footer class="footer-styling">
-        <h3 class="footer-styling h3">About Registration Form</h3>
-        <p>This web page has been developed purely for exercise purposes, with knowledge that learned from FreeCodeCamp's Responsive Web Design Certification Course and inspired by the HTML Registration Form web page at FreeCodeCamp. How this project has been developed can be observed by following the commits. Thanks for visiting.</p>
-        <h3 class="footer-styling h3">About Me</h3>
-        <p><strong>Oğuzhan Demirci</strong></p>
-        <p><strong>LinkedIn: </strong><a href="https://www.linkedin.com/in/oguzhandemirci/" target="_blank"> Oğuzhan Demirci </a></p>
-        <p><strong>GitHub: </strong><a href="https://github.com/oguzhandemirci1993" target="_blank">oguzhandemirci1993</a></p>
-        <p><strong>Stack Overflow: </strong><a href="https://stackoverflow.com/users/20921717/" target="_blank">Oğuzhan Demirci</a></p>
-        <p><strong>FreeCodeCamp: </strong><a href="https://www.freecodecamp.org/oguzhandemirci" target="_blank">oguzhandemirci</a></p>
-    </footer>
+            <footer class="footer">
+                <h3>About Registration Form</h3>
+                <p>This web page has been developed purely for exercise purposes, with knowledge that learned from FreeCodeCamp's Responsive Web Design Certification Course and inspired by the HTML Registration Form web page at FreeCodeCamp. How this project has been developed can be observed by following the commits. Thanks for visiting.</p>
+                <h3>Oğuzhan Demirci</h3>
+                <p><a href="https://www.linkedin.com/in/oguzhandemirci/" target="_blank">LinkedIn</a> <a href="https://github.com/oguzhandemirci1993" target="_blank">GitHub</a> <a href="https://stackoverflow.com/users/20921717/" target="_blank">Stack Overflow</a> <a href="https://www.freecodecamp.org/oguzhandemirci" target="_blank">FreeCodeCamp</a></p>
+            </footer>
     </body>
 </html>

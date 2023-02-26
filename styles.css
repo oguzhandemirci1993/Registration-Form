@@ -13,6 +13,7 @@ input,select,textarea {
   width: 100%; /*We still need to maintain this width value to ensure width of these elements can cover 100% percent of their rows.*/
   min-height: 1.5rem; /*This adjusts text input boxes.*/
   margin: 0.5rem 0; /*This adjusts distances between text input boxes.*/
+}
 
 form {
   max-width: 400px;
@@ -25,9 +26,15 @@ label {
   display:block;
 }
 
-.radio-set, .checkbox-set{
+.radio-set{
   width: unset;
-  margin-right:0.3rem; /*top,right,bottom,left TRBL*/
+  margin:0.3rem 0.3rem 0.3rem 0rem; /*top,right,bottom,left TRBL*/
+  vertical-align:-45%; 
+}
+
+.checkbox-set {
+  width: unset;
+  margin:-0.3rem 0.3rem -0.3rem 0rem; /*top,right,bottom,left TRBL*/
   vertical-align:-45%; 
 }
 
@@ -48,14 +55,23 @@ input[type="submit"] {
   font-weight: bold; /*Makes the text bold.*/
 }
 
-fieldset {
+/*Created 3 different fieldset classes instead of using "fieldset:last-of-type" 
+CSS pseudo class in order to get rid of secondary fieldset bottom border.*/
+
+.fieldset1 {
   border: none;
   padding: 0.5rem 0rem 0.5rem 0; /*top,right,bottom,left TRBL*/
   border-bottom: 3px solid white;
 }
 
-fieldset:last-of-type {
-  border-bottom: none;
+.fieldset2 {
+  border: none;
+  padding: 0.5rem 0rem 0.5rem 0; /*top,right,bottom,left TRBL*/
+}
+
+.fieldset3 {
+  border: none;
+  margin:0;
 }
 
 h1,p {
@@ -64,25 +80,30 @@ h1,p {
   margin: 1em auto;
 }
 
-.footer-styling {
-  text-align:center;
-  font-family: Georgia, Helvetica;
+.footer p{
+  font-size: 0.75rem;
+  text-align: center;
+  font-family: Georgia, Calibri;
+  max-width: 400px;
+  min-width: 300px;
+  width: 60vw;
+  margin: 0.5rem auto;
 }
 
-.footer-styling h3{
-  font-size: 18px;
-  margin-top:1%;
-  margin-bottom: 1%;
-}
-
-.footer-styling p{
-  font-size: 14px;
-  margin: 0.20em 500px;
+.footer h3{
+  font-size: 1rem;
+  text-align: center;
+  font-family: Georgia, Calibri;
+  max-width: 400px;
+  min-width: 300px;
+  width: 60vw;
+  margin: 0.5rem auto;
 }
 
 a {
   color:lightskyblue;
-  margin-top: 5px;
+  margin-right: 0.5rem;
+  padding-bottom:1rem;
 }
 
 a:visited {
@@ -91,7 +112,6 @@ a:visited {
 
 a:hover {
   color:lightblue;
-  ;
 }
 
 a:active {
